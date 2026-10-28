@@ -31,26 +31,6 @@
 * **Спецэффекты:** Тряска камеры (Camera Shake) при взрывах, реализованная через корутины. При попадании 3D-модель палубы меняет цвет.
 * **UI:** Полноценное меню, HUD с кнопками способностей и экран победы/поражения.
 
----
-
-## 🏗️ Архитектура проекта
-
-Проект разделен на два независимых слоя:
-```text
-Assets/
-└── Scripts/
-    ├── Core/       # Чистая логика (без Unity)
-    │   ├── Board.cs
-    │   ├── Ship.cs
-    │   ├── Coord.cs
-    │   └── SimpleAi.cs
-    └── Game/       # Визуальный слой Unity (MonoBehaviour)
-        ├── GameManager.cs
-        ├── BoardView.cs
-        ├── PlacementManager.cs
-        ├── SimpleAi.cs
-        └── UIManager.cs
-
 ### Слой Core (Игровое ядро)
 
 * Не зависит от Unity (`using UnityEngine` отсутствует).
@@ -83,3 +63,24 @@ git clone https://github.com/ВАШ_НИК/SeaBattle3D.git
 
 * Откройте папку проекта через Unity Hub.
 * Откройте сцену Assets/Scenes/MainScene.unity и нажмите Play.
+
+---
+
+## 🏗️ Архитектура проекта
+
+Проект разделен на два независимых слоя:
+```text
+Assets/
+└── Scripts/
+    ├── Core/       # Чистая логика (без Unity)
+    │   ├── Board.cs
+    │   ├── Ship.cs
+    │   ├── Coord.cs
+    │   └── SimpleAi.cs
+    └── Game/       # Визуальный слой Unity (MonoBehaviour)
+        ├── GameManager.cs
+        ├── BoardView.cs
+        ├── PlacementManager.cs
+        ├── SimpleAi.cs
+        └── UIManager.cs
+
