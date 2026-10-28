@@ -59,7 +59,7 @@
 * Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/ВАШ_НИК/SeaBattle3D.git
+git clone https://github.com/ВАШ_НИК/SeaBattle3D.git ```
 
 * Откройте папку проекта через Unity Hub.
 * Откройте сцену Assets/Scenes/MainScene.unity и нажмите Play.
